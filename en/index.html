@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome | S. Kamatchi's Cattle Feeds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/en/logo.png" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 1rem;
+      animation: scaleIn 1s ease-in-out;
+    }
+
+    .welcome-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.5rem;
+      animation: fadeSlideIn 1.4s ease-in-out;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffb800;
+      text-shadow: 
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,;
+      animation: fadeSlideIn 1.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Placeholder for Logo -->
+  <img src="images/logo.png" alt="Company Logo" class="logo" />
+
+  <div class="welcome-text">WELCOME TO S.KAMATCHI'S CATTLE FEEDS</div>
+  <div class="tagline">Smart Feeding, Smarter Profit</div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 3000);
+  </script>
+</body>
+</html>

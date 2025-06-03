@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>வரவேற்பு | எஸ். காமாட்சி மாட்டு தீவனம்</title>
+  
+  <!-- Noto Sans Tamil font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+      /* prevent Tamil text overflow */
+      word-break: break-word;
+    }
+
+    .logo {
+      width: 200px;
+      max-width: 80%;
+      margin-bottom: 1rem;
+      animation: scaleIn 1s ease-in-out;
+    }
+
+    .welcome-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.5rem;
+      animation: fadeSlideIn 1.4s ease-in-out;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffb800;
+  
+      animation: fadeSlideIn 1.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .welcome-text {
+      font-size: 1.2rem;
+    }
+
+    .tagline{
+      font-size: 0.9rem;
+    }
+  }
+  </style>
+</head>
+<body>
+  <!-- Placeholder for Logo -->
+  <img src="images/logo.png" alt="நிறுவன லோகோ" class="logo" />
+
+  <div class="welcome-text">எஸ்.காமாட்சி மாட்டு தீவனத்திற்கு வரவேற்கிறோம்</div>
+  <div class="tagline">சிறந்த தீவனம், சிறப்பான லாபம்</div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 3000);
+  </script>
+</body>
+</html>
